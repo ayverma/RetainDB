@@ -5,7 +5,11 @@
       "src": "packages/server/src/index.ts",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["packages/server/prisma/**"]
+        "includeFiles": [
+          "node_modules/**",
+          "packages/server/node_modules/**",
+          "packages/server/prisma/**"
+        ]
       }
     }
   ],
