@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "turbo run build",
-    "vercel-build": "cd packages/server && pnpm exec prisma generate && pnpm exec prisma db push && pnpm run build && mkdir -p ../../public",
+    "vercel-build": "cd packages/server && pnpm exec prisma generate && pnpm exec prisma db push && pnpm run build",
     "build:server": "pnpm --filter @retaindb/server build",
     "dev": "turbo run dev --parallel",
     "dev:server": "pnpm --filter @retaindb/server dev",
